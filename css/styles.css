@@ -1,0 +1,145 @@
+body {
+    padding: 0;
+    margin: 0;
+    background-color: #0c182b;
+    color: #e3e5e8;
+    font-family: Consolas;
+}
+
+.clearfix {
+    overflow: auto;
+}
+
+.intro {
+    font-size: 13px;
+    position: absolute;
+    top: 2%;
+    left: 1%;
+    border: solid 3px #e3e5e8;
+    width: 250px;
+    text-align: center;
+}
+
+.skills {
+    position: absolute;
+    border: solid 3px #e3e5e8;
+    top: 21%;
+    left: 1%;
+    width: 250px;
+    height: 350px;
+    text-align: center;
+}
+
+.skill-bar {
+    position: absolute;
+}
+
+.skills p {
+    font-size: 12px;
+    margin-left: 9px;
+    margin-top: 1px;
+    height: auto;
+    width: 60px;
+    float: left;
+}
+
+.bar {
+    position: absolute;
+    width: 150px;
+    height: 15px;
+    border: solid 1.5px #5b6982;
+    border-radius: 100px;
+}
+
+.filler {
+    height: inherit;
+    background:#5b6982;
+    margin-left: .2px;
+    border-radius: 100px;
+}
+
+.filler-text {
+    font-size: 12px;
+    position: absolute;
+    left: 45%;
+}
+
+.bar1 {
+    left: 120%;
+    top: -12%;
+}
+
+.filler1 {
+    width: 75%;
+}
+
+.skill2 {
+    top: 25%;
+}
+
+.bar2 {
+    left: 120%;
+    top: 1%;
+}
+
+.filler2 {
+    width: 75%;
+}
+
+.skill3 {
+    top: 33.5%;
+}
+
+.bar3 {
+    left: 120%;
+    top: 1%;
+}
+
+.filler3 {
+    width: 70%;
+}
+
+.skill4 {
+    top: 41.5%;
+}
+
+.bar4 {
+    left: 120%;
+    top: 9%;
+}
+
+.filler4 {
+    width: 70%;
+}
+
+.skill5 {
+    top: 50%;
+}
+
+.bar5 {
+    left: 120%;
+    top: 9%;
+}
+
+.filler5 {
+    width: 40%;
+}
+
+.misc {
+    position: absolute;
+    top: 55%;
+    height: auto;
+    width: 100%;
+}
+
+.contact {
+    position: absolute;
+    border: solid 3px #e3e5e8;
+    top: 74%;
+    left: 1%;
+    width: 250px;
+    height: 160px;
+    text-align: center;
+}
+
+
