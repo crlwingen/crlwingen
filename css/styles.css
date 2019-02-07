@@ -4,10 +4,16 @@ body {
     background-color: #0c182b;
     color: #e3e5e8;
     font-family: Consolas;
+    text-align: center;
 }
 
 .clearfix {
     overflow: auto;
+}
+
+.container {
+    width: 800px;
+    margin: 0 auto;
 }
 
 .intro {
@@ -140,6 +146,17 @@ body {
     width: 250px;
     height: 160px;
     text-align: center;
+}
+
+.social span {
+    font-size: 14px;
+}
+
+.main-content {
+    width: 800px;
+    height: 100%;
+    border: solid 3px #e3e5e8;
+    right: 2px;
 }
 
 
