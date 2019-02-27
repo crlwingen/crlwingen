@@ -18,17 +18,25 @@ function getRepo() {
 
     for(let repo of objRepo) {
         var item = document.createElement("li");
-        var desc = document.createElement("p");
+
+        var cont = document.createElement("div");
+        var desc = document.createElement("h5");
+        var link = document.createElement("a");
         
-        item.appendChild(document.createTextNode(repo.name));
         item.setAttribute("id", "menu");
 
         desc.appendChild(document.createTextNode(repo.description));
         desc.setAttribute("id", "list");
 
+        link.appendChild(document.createTextNode(repo.name));
+        link.href = repo.html_url;
+        link.target = "_blank";
+
+        item.appendChild(link);
         item.appendChild(desc);
+
         list.appendChild(item);
-    }
+     }
 
     document.getElementById("project").appendChild(list);
 }
