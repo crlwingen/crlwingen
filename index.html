@@ -4,48 +4,39 @@
 <head>
     <title>crlwingen.</title>
     <link href="css/styles.css" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" 
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" 
+        crossorigin="anonymous">
 </head>
 
 <body onload="initGitApi()">
     <div class="container bbox">
         <div class="box">
-            <h2>Carl Jerwin Gensaya</h2>
-            <h4>Full-stack Developer</h4>
-            <h4>PUP ComSci 2014-2018</h4>
+
+            <div class="name">
+                <h2 class="no-margin">Carl Jerwin Gensaya</h2>
+                <h4 class="no-margin">Full-stack Developer</h4>
+            </div>
 
             <div class="social">
                 <ul>
-                    <li><a href="#">git</a></li>
-                    <li><a href="#">facebook</a></li>
-                    <li><a href="#">git</a></li>
-                    <li><a href="#">git</a></li>
+                    <li><a href="https://github.com/crlwingen" target="_blank"><i class="fab fa-github fa-lg"></i></a></li>
+                    <li><a href="https://fb.me/codecarlcode" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
                 </ul>
             </div>
 
-            <p>hi im blah blah</p> 
-
             <div class="timeline">
-                <p><span id="toggleTimeline" onclick="toggleContent('toggleTimeline', 'timeline')">[+]</span> Timeline</p>
-                This is my timeline!
+                <h4 class="no-margin"><span id="toggleTimeline" onclick="toggleContent('toggleTimeline', 'timeline')">[+]</span> Timeline</h4>
+                <p class="no-margin">This is my timeline!</p>
                 <div id="timeline" classa="content"></div>
             </div>
 
             <div class="projects">
-                <p><span id="toggleProject" onclick="toggleContent('toggleProject', 'project')">[+]</span> Projects</p>
+                <h4 class="no-margin"><span id="toggleProject" onclick="toggleContent('toggleProject', 'project')">[+]</span> Projects</h4>
+                <p class="no-margin">mini-projects boi</p>
                 <div id="project" class="content"></div>
             </div>
 
-            <div class="stats">
-                <p><span id="toggleStats" onclick="toggleContent('toggleStats', 'stats')">[+]</span> Stats</p>
-                <div id="stats" class="content">
-                    <ul>
-                        <li><a href="#">test</a></li>
-                        <li><a href="#">test</a></li>
-                        <li><a href="#">test</a></li>
-                    </ul>
-                </div>
-            </div>
         </div>
     </div>
 
