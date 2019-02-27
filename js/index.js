@@ -49,3 +49,16 @@ function initGitApi() {
     request.open('get', 'https://api.github.com/users/crlwingen/repos');
     request.send();
 }
+
+function toggleTheme() {
+    var theme_btn = document.getElementById("theme-btn");
+    var theme = document.getElementById("theme");
+
+    if(theme.className == "far fa-moon") {
+        theme.setAttribute("class", "far fa-sun");
+        theme_btn.style.backgroundColor = "white";
+    } else {
+        theme.setAttribute("class", "far fa-moon");
+        theme_btn.style.backgroundColor = "#0c182b";
+    }
+}
