@@ -63,7 +63,7 @@ body {
 }
 
 .social ul li a:hover {
-    color: #f4c242;
+    color: #bc4343;
 }
 
 .timeline {
@@ -122,4 +122,30 @@ ul {
 
 .no-margin {
     margin: 0;
+}
+
+.italic {
+    font-style: italic;
+    color: #bc4343;
+}
+
+h4 span {
+    font-weight: 400;
+}
+
+#theme-btn {
+    height: 45px;
+    width: 45px;
+    background-color: white;
+    color: red;
+    border-radius: 100%;
+    position: absolute;
+    top: 90%;
+    left: -20%;
+}
+
+#theme-btn i {
+    position: relative;
+    left: 35%;
+    top: 35%;
 }
