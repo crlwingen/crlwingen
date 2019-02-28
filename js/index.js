@@ -1,7 +1,6 @@
 var darkColor = "#0c182b";
 var lightColor =  "#e3e5e8";
 
-
 function toggleContent(toggle, content) {
     var toggle = document.getElementById(toggle);
     var content = document.getElementById(content);

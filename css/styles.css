@@ -92,15 +92,17 @@ ul {
     transition: max-height 0.15s ease-out;
     overflow: hidden;
     margin: 4px 0;
+    opacity: .6;
 }
 
 #menu a {
     text-decoration: none;
+    font-weight: 600;
     color: inherit;
 }
 
 #menu:hover #list {
-    max-height: 100px;
+    max-height: 200px;
     transition: max-height 0.25s ease-in;
 }
 
