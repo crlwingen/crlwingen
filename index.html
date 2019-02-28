@@ -1,9 +1,8 @@
 <html>
-<!--  -->
-
 <head>
     <title>crlwingen.</title>
     <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <link rel="icon" type="image/png" href="res/favicon-32x32.png">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" 
         integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" 
         crossorigin="anonymous">
@@ -20,23 +19,24 @@
 
             <div class="social">
                 <ul>
-                    <li><a href="https://github.com/crlwingen" target="_blank"><i class="fab fa-github fa-lg"></i></a></li>
-                    <li><a href="https://fb.me/codecarlcode" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a class="social-icon" href="https://github.com/crlwingen" target="_blank"><i class="fab fa-github fa-lg"></i></a></li>
+                    <li><a class="social-icon" href="https://fb.me/codecarlcode" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
                 </ul>
             </div>
 
             <div class="timeline">
-                <h4 class="no-margin"><span id="toggleTimeline" onclick="toggleContent('toggleTimeline', 'timeline')">[+]</span> Timeline</h4>
-                <p class="no-margin">This is my timeline!</p>
-                <div id="timeline" classa="content"></div>
+                <i>Not a good coder but striving to be one.</i>
             </div>
 
             <div class="projects">
                 <h4 class="no-margin"><span id="toggleProject" onclick="toggleContent('toggleProject', 'project')">[+]</span> Projects</h4>
-                <p class="no-margin">mini-projects boi</p>
+                <p class="no-margin">Random projects I've made during my college life.</p>
                 <div id="project" class="content"></div>
             </div>
-            <!-- <button type="button"></button> -->
+
+            <div class="mail">
+                Got something for me? You can reach me at <i>crlwingen@gmail.com</i>.
+            </div>
 
             <div id="theme-btn" onclick="toggleTheme()">
                 <i class="far fa-sun" id="theme"></i>
@@ -46,6 +46,4 @@
 
     <script type="text/javascript" src="js/index.js"></script>
 </body>
-
-<!--  -->
 </html>

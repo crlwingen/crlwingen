@@ -56,14 +56,10 @@ body {
     margin-left: 10px;
 }
 
-.social ul li a {
+.social-icon {
     font-size: 20px;
     text-decoration: none;
-    color: white;
-}
-
-.social ul li a:hover {
-    color: #bc4343;
+    color: #e3e5e8;
 }
 
 .timeline {
@@ -79,6 +75,14 @@ span {
     height: auto;
 }
 
+.projects {
+    margin-bottom: 90px;
+}
+
+.mail {
+    opacity: .7;
+}
+
 ul {
     padding-left: 17px;
 }
@@ -92,7 +96,7 @@ ul {
 
 #menu a {
     text-decoration: none;
-    color: white;
+    color: inherit;
 }
 
 #menu:hover #list {
@@ -136,8 +140,8 @@ h4 span {
 #theme-btn {
     height: 45px;
     width: 45px;
-    background-color: white;
-    color: red;
+    background-color: #e3e5e8;
+    color: #bc4343;
     border-radius: 100%;
     position: absolute;
     top: 90%;
