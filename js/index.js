@@ -1,3 +1,7 @@
+var darkColor = "#0c182b";
+var lightColor =  "#e3e5e8";
+
+
 function toggleContent(toggle, content) {
     var toggle = document.getElementById(toggle);
     var content = document.getElementById(content);
@@ -50,15 +54,32 @@ function initGitApi() {
     request.send();
 }
 
-function toggleTheme() {
-    var theme_btn = document.getElementById("theme-btn");
-    var theme = document.getElementById("theme");
+var theme = document.getElementById("theme");
+var theme_btn = document.getElementById("theme-btn");
+var social_icon = document.getElementsByClassName("social-icon");
 
-    if(theme.className == "far fa-moon") {
-        theme.setAttribute("class", "far fa-sun");
-        theme_btn.style.backgroundColor = "white";
+function toggleTheme() {
+    if(theme.className == "far fa-sun") {
+        lightTheme();
     } else {
-        theme.setAttribute("class", "far fa-moon");
-        theme_btn.style.backgroundColor = "#0c182b";
+        darkTheme();
     }
+}
+
+function darkTheme() {
+    document.body.style.backgroundColor = darkColor;
+    document.body.style.color = lightColor;
+    theme.setAttribute("class", "far fa-sun");
+    theme_btn.style.backgroundColor = lightColor;
+    social_icon[0].style.color = lightColor;
+    social_icon[1].style.color = lightColor;
+}
+
+function lightTheme() {
+    document.body.style.backgroundColor = lightColor;
+    document.body.style.color = darkColor;
+    theme.setAttribute("class", "far fa-moon");
+    theme_btn.style.backgroundColor = darkColor;
+    social_icon[0].style.color = darkColor;
+    social_icon[1].style.color = darkColor;
 }
