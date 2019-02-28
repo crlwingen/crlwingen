@@ -145,9 +145,10 @@ h4 span {
     background-color: #e3e5e8;
     color: #bc4343;
     border-radius: 100%;
-    position: absolute;
-    top: 90%;
-    left: -20%;
+    position: fixed;
+    right: 10%;
+    top: 80%;
+    margin-bottom: 50px;
 }
 
 #theme-btn i {
