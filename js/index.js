@@ -18,27 +18,34 @@ function getRepo() {
     var list = document.createElement("ul");
     var objRepo = JSON.parse(this.responseText);
 
-
     for(let repo of objRepo) {
-        var item = document.createElement("li");
+        var date = repo.created_at;
+        var year  = date.split("-");
 
-        var cont = document.createElement("div");
-        var desc = document.createElement("h5");
-        var link = document.createElement("a");
-        
-        item.setAttribute("id", "menu");
+        if(year[0] == "2017") {
+            var item = document.createElement("li");
 
-        desc.appendChild(document.createTextNode(repo.description));
-        desc.setAttribute("id", "list");
+            var cont = document.createElement("div");
+            var desc = document.createElement("h5");
+            var link = document.createElement("a");
 
-        link.appendChild(document.createTextNode(repo.name));
-        link.href = repo.html_url;
-        link.target = "_blank";
+            item.appendChild(document.createTextNode(repo.name))
+            item.setAttribute("id", "menu");
 
-        item.appendChild(link);
-        item.appendChild(desc);
+            link.appendChild(document.createTextNode("  git"));
+            link.setAttribute("id", "git_link");
+            link.setAttribute("class", "italic");
+            link.href = repo.html_url;
+            link.target = "_blank";
 
-        list.appendChild(item);
+            desc.appendChild(document.createTextNode(repo.description));
+            desc.setAttribute("id", "list");
+
+            item.appendChild(link);
+            item.appendChild(desc);
+
+            list.appendChild(item);
+        }
      }
 
     document.getElementById("project").appendChild(list);
