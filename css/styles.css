@@ -103,7 +103,20 @@ ul {
 
 #menu:hover #list {
     max-height: 200px;
-    transition: max-height 0.25s ease-in;
+    transition: max-height 0.2s ease-in;
+}
+
+#menu:hover #git_link {
+    visibility: visible;
+}
+
+#git_link {
+    font-size: .8em;
+    visibility: hidden;
+}
+
+#git_link:hover {
+    color: #bc4343;
 }
 
 #timeline {
