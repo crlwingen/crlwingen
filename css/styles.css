@@ -13,6 +13,10 @@ body {
     font-weight: 100;
 }
 
+span {
+    font-size: .8em;
+}
+
 .container {
     width: 100%;
     height: 100%;
